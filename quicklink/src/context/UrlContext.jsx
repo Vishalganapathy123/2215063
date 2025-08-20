@@ -6,7 +6,7 @@ export const UrlProvider = ({ children }) => {
   const [urls, setUrls] = useState([]);
   const [shortUrl, setShortUrl] = useState("");
 
-  // Fetch all stats from backend
+  
   const fetchStats = async () => {
     try {
       const res = await fetch("http://localhost:5000/api/stats");
